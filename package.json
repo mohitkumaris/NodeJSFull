@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/mohitkumaris/NodeJSFull#readme",
   "dependencies": {
+    "lodash": "^4.17.4",
     "node": "^9.4.0"
   }
 }
