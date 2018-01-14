@@ -1,0 +1,26 @@
+{
+  "name": "nodejsfull",
+  "version": "1.0.0",
+  "description": "node js full course",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohitkumaris/NodeJSFull.git"
+  },
+  "keywords": [
+    "node",
+    "course"
+  ],
+  "author": "mohit kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohitkumaris/NodeJSFull/issues"
+  },
+  "homepage": "https://github.com/mohitkumaris/NodeJSFull#readme",
+  "dependencies": {
+    "node": "^9.4.0"
+  }
+}
