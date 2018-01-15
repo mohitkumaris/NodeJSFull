@@ -3,9 +3,9 @@
 console.log('Starting app js file');
 const  fs= require('fs');
 const _=require('lodash');
+const yargs=require('yargs');
 //const os=require('os');
-
-
+const argv=yargs.argv;
 const notes=require('./notes');
 
 //console.log(process.argv);
@@ -14,7 +14,9 @@ var command=process.argv[2];
 console.log("Command:",command);
 
 if(command ==="add"){
-    console.log("Adding new note")
+    console.log("Adding new note");
+    notes.addNote(argv.title,argv.body);
+
 }else if(command === "list"){
     console.log("Listing all notes");
 }

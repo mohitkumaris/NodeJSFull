@@ -22,6 +22,7 @@
   "homepage": "https://github.com/mohitkumaris/NodeJSFull#readme",
   "dependencies": {
     "lodash": "^4.17.4",
-    "node": "^9.4.0"
+    "node": "^9.4.0",
+    "yargs": "^4.7.1"
   }
 }
