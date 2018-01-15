@@ -1,31 +1,35 @@
 
 'use strict'
-
+console.log('Starting app js file');
 const  fs= require('fs');
-const os=require('os');
-const notes=require('./notes');
 const _=require('lodash');
-
-var user=os.userInfo();
-
-console.log(notes.AddNumbers(7,6));
-
-console.log(_.isString('Yeah'));
-
-var FilteredArray=_.uniq([1,2,1,2,3,4,5,6]);
-
-console.log(FilteredArray);
-
-var users = [
-    { 'user': 'fred',   'age': 48 },
-    { 'user': 'barney', 'age': 36 },
-    { 'user': 'fred',   'age': 40 },
-    { 'user': 'barney', 'age': 34 }
-];
-
-console.log(_.sortBy(users,['user','age']));
+//const os=require('os');
 
 
+const notes=require('./notes');
+
+//console.log(process.argv);
+
+var command=process.argv[2];
+console.log("Command:",command);
+
+if(command ==="add"){
+    console.log("Adding new note")
+}else if(command === "list"){
+    console.log("Listing all notes");
+}
+else if(command === "read"){
+    console.log("Reading notes");
+}
+else if(command === "remove"){
+    console.log("Removing notes");
+}
+else
+{
+    console.log("Command not recognized");
+}
+
+//var user=os.userInfo();
 //console.log(user);
 
 /*fs.appendFile('greetings.txt',`Hello ${user.username}`,function (err) {
