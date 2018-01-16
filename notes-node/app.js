@@ -10,7 +10,7 @@ const notes=require('./notes');
 
 //console.log(process.argv);
 
-var command=process.argv[2];
+var command=argv._[0];
 console.log("Command:",command);
 
 if(command ==="add"){
