@@ -15,6 +15,7 @@
 /*
 Resolve or Reject only one is called.
 They are called only once.
+They take only once argument.
 Unlike callback which can be called multiple times.
 You have different function to handle resolve and reject.
 Once we get resolve the stage is called settled.

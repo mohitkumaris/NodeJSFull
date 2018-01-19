@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/mohitkumaris/NodeJSFull#readme",
   "dependencies": {
+    "axios": "^0.17.1",
     "lodash": "^4.17.4",
     "node": "^9.4.0",
     "request": "^2.83.0",

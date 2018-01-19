@@ -14,19 +14,40 @@ Reverse = function(number) {
 console.log(Reverse(1234));
 
 
-function Node(data){
-    this.data=data;
-    this.next=null;
+function Node(data) {
+    this.data = data;
+    this.next = null;
 }
 
-
-var singleNode=new Node(3);
-var lastNode= new Node(4);
-while(singleNode.next != null){
-
-    singleNode=singleNode.next;
-
+function SinglyList() {
+    this._length = 0;
+    this.head = null;
 }
-singleNode.next=lastNode.data;
-lastNode.next=null;
-console.log(singleNode);
+
+SinglyList.prototype.add=function (value) {
+
+
+
+    var node= new Node(value),
+        currentNode=this.head;
+// 1st use-case: an empty list
+    if(!currentNode){
+        this.head=node;
+        this._length++;
+        return node;
+
+    }
+// 2nd use-case: a non-empty list
+    while(currentNode.next){
+        currentNode=currentNode.next;
+    }
+
+    currentNode.next=node;
+    this.length++;
+    return node;
+
+};
+
+var linkedlist = new SinglyList();
+console.log(linkedlist.add(5));
+
