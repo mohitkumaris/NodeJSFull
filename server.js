@@ -2,7 +2,7 @@
 const express=require('express');
 
 var app=express();
-
+const port=process.env.PORT || 4949;
 // Its uses middleware.
 app.use(express.static(__dirname + '/public'));
 
@@ -32,6 +32,6 @@ app.get('/about',(req,res)=>{
 });
 
 
-app.listen(4949,()=>{
+app.listen(port,()=>{
     console.log('Server is up and running.')
 });
